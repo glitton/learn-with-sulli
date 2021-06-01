@@ -1,12 +1,18 @@
+// Step 1: Import React
 import * as React from "react";
+import { Link } from "gatsby";
 
-const Homepage = () => {
+// Step 2: Define your component
+const IndexPage = () => {
   return (
-    <>
-      <h1>Hello Sulli!</h1>
-      <p>How are you today?</p>
-    </>
+    <main>
+      <title>Home Page</title>
+      <h1>Welcome to my Gatsby site!</h1>
+      <Link to="/about">About</Link>
+      <p>I'm making this by following the Gatsby Tutorial.</p>
+    </main>
   );
 };
 
-export default Homepage;
+// Step 3: Export your component
+export default IndexPage;
