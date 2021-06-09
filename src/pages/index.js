@@ -9,10 +9,15 @@ const IndexPage = () => {
       <StaticImage
         src="https://soyunperro.com/wp-content/uploads/2019/03/pitbulls.jpg"
         alt="Pitbull puppies"
+        loading="eager"
+        placeholder="blurred"
+        layout="fixed"
       />
       <StaticImage
         src="../images/BennieHandsome.jpg"
         alt="Bennie the pittbull"
+        placeholder="tracedSVG"
+        layout="fullWidth"
       />
     </Layout>
   );
