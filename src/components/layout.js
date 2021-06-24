@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `);
-  console.log(pageTitle);
+
   return (
     <main className={container}>
       <title>{pageTitle || data.site.siteMetadata.title}</title>
@@ -34,6 +34,11 @@ const Layout = ({ pageTitle, children }) => {
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>
+              Blog
             </Link>
           </li>
         </ul>
